@@ -29,5 +29,7 @@ In the Kafka Streams API you can find `KStream` and `KTable`, which are dual con
 <http://docs.confluent.io/3.1.2/streams/index.html>
 
 It is interesting to note that there is no direct way to transform a `KStream` into a `KTable`. Instead the records of a `KStream` can be grouped into a `KGroupedStream`. `KGroupedStream` has 3 methods that transform it into a `KTable`: `reduce`, `aggregate` and `count`.
-In the same way the records of a `KTable` can be grouped into a `KGroupedTable`. On the other hand `KTable` has a `toStream` method that transforms it into a `KStream`.  
+In the same way the records of a `KTable` can be grouped into a `KGroupedTable`.
+
+On the other hand `KTable` has a `toStream` method that transforms it into a `KStream`.  
 
