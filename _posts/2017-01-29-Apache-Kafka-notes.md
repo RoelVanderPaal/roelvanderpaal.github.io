@@ -1,9 +1,19 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Apache Kafka notes"
 date:   2017-01-29 21:49:57 +0100
-categories: jekyll update
+categories: kafka
 ---
+* Run Kafka on a single node with the following Docker commands:
+
+{% highlight ruby %}
+sudo docker run -d --net=host --name zookeeper -e ZOOKEEPER_CLIENT_PORT=2181 confluentinc/cp-zookeeper
+sudo docker run -d --net=host --name kafka -e KAFKA_ZOOKEEPER_CONNECT=localhost:2181 -e KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://localhost:9092 confluentinc/cp-kafka
+To enable remote connections to the Kafka node, replace localhost in the KAFKA_ADVERTISED_LISTENERS environment variable with the Kafka node IP address.
+{% endhighlight %}
+
+
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
