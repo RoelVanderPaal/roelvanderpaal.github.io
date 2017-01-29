@@ -4,7 +4,8 @@ title:  "Apache Kafka notes"
 date:   2017-01-29 21:49:57 +0100
 categories: kafka
 ---
-* Run Kafka on a single node with the following Docker commands:
+### Docker
+Run Kafka on a single node with the following Docker commands:
 
 {% highlight ruby %}
 sudo docker run -d --net=host --name zookeeper -e ZOOKEEPER_CLIENT_PORT=2181 confluentinc/cp-zookeeper
