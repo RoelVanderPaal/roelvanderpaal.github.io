@@ -23,6 +23,8 @@ To enable remote connections to the Kafka node, replace `localhost` in the `KAFK
 Besided a value, each record in Kafka can also have an optional key. With the Kafka Streams API it is possible to filter on key.
 
 ### Kafka Streams
+In the Kafka Streams API you can find `KStream` and `KTable`, which are dual concepts as explained in the following articles:
 <https://www.confluent.io/blog/introducing-kafka-streams-stream-processing-made-simple/>
 <http://docs.confluent.io/3.1.2/streams/index.html>
+
 
