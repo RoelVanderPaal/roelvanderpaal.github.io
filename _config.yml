@@ -22,6 +22,11 @@ url: "https://roelvanderpaal.github.io" # the base hostname & protocol for your 
 twitter_username: RoelVanderPaal
 github_username:  RoelVanderPaal
 
+disqus:
+    shortname: https-roelvanderpaal-github-io
+
+google_analytics: UA-91000962-1
+
 # Build settings
 markdown: kramdown
 theme: minima
